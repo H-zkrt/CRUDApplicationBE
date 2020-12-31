@@ -11,7 +11,11 @@ namespace CRUDApplication.Models
     {
         [Key] 
         public int PId { get; set; }
-        
+
+        [Required]
+        [Column(TypeName = "nvarchar(100)")]
+        public String PName { get; set; }
+
         [Required]
         [Column(TypeName = "nvarchar(300)")]
         public String Psubject { get; set; }
