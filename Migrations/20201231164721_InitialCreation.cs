@@ -42,7 +42,7 @@ namespace CRUDApplication.Migrations
                 {
                     PId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    PName = table.Column<string>(type: "nvarchar(100)", nullable: false),
+                    PLabel = table.Column<string>(type: "nvarchar(100)", nullable: false),
                     Psubject = table.Column<string>(type: "nvarchar(300)", nullable: false)
                 },
                 constraints: table =>

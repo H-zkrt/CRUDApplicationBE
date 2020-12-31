@@ -67,7 +67,7 @@ namespace CRUDApplication.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("PName")
+                    b.Property<string>("PLabel")
                         .IsRequired()
                         .HasColumnType("nvarchar(100)");
 

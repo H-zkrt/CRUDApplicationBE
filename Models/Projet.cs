@@ -14,7 +14,7 @@ namespace CRUDApplication.Models
 
         [Required]
         [Column(TypeName = "nvarchar(100)")]
-        public String PName { get; set; }
+        public String PLabel { get; set; }
 
         [Required]
         [Column(TypeName = "nvarchar(300)")]

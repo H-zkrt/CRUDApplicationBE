@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUDApplication.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20201231163631_InitialCreation")]
+    [Migration("20201231164721_InitialCreation")]
     partial class InitialCreation
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -69,7 +69,7 @@ namespace CRUDApplication.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("PName")
+                    b.Property<string>("PLabel")
                         .IsRequired()
                         .HasColumnType("nvarchar(100)");
 
